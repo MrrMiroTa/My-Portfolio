@@ -1,27 +1,30 @@
 <script>
 export default {
-  data() {
-    return {
-      Menu: [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Testimonials', href: '#testimonials' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
-      ],
-      isMenuOpen: false
+    data() {
+        return {
+            Menu: [
+                { name: 'Home', href: '#home' },
+                { name: 'About', href: '#about' },
+                { name: 'Skills', href: '#skills' },
+                { name: 'Testimonials', href: '#testimonials' },
+                { name: 'Projects', href: '#projects' },
+                { name: 'Contact', href: '#contact' },
+            ],
+            isMenuOpen: false
+        }
+    },
+    methods: {
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
+        },
+        scrollToSection(href) {
+            this.isMenuOpen = false;
+            const section = document.querySelector(href);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     }
-  },
-  methods: {
-    scrollToSection(href) {
-      this.isMenuOpen = false;
-      const section = document.querySelector(href);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }
 }
 </script>
 <template>
@@ -48,6 +51,7 @@ export default {
                     </span>
 
                 </div>
+
             </button>
         </div>
         <nav
@@ -64,6 +68,11 @@ export default {
 
                 </li>
             </ul>
+            <div class="mt-8 md:mt-0 md:ml-8">
+                <button
+                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20  hover:scale-105">Get
+                    in Touch</button>
+            </div>
         </nav>
     </header>
 </template>
