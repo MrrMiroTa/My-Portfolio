@@ -2,6 +2,7 @@
   <div class="min-h-screen bg-linear-to-br from-gray-800 via-blue-900 to-bg-gray-800">
     <NavBar />
     <Hero />
+    <Service/>
   </div>
 </template>
 <script>
@@ -10,10 +11,12 @@ import 'aos/dist/aos.css';
 import Hero from './components/Hero.vue';
 import NavBar from './components/NavBar.vue';
 import { ref, nextTick, onMounted } from 'vue';
+import Service from './components/Service.vue';
 export default {
   components: {
     NavBar,
     Hero,
+    Service
   },
   setup(){
     const loading = ref(true);
