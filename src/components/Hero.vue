@@ -1,5 +1,5 @@
 <template>
-    <section class="relative w-full overflow-hidden min-h-screen flex items-center justify-center">
+    <section class="relative w-full overflow-hidden min-h-screen flex items-center justify-center ">
         <div class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10">
             <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
                 <div class="flex flex-col md:mt-0 mt-20 justify-center">
@@ -30,9 +30,9 @@
                                     class=" w-5 h-5  group-hover:translate-x-1 text-blue-900 transition-transform" />
                             </div>
                         </a>
-                        <a href="cv"
+                        <a href="#" @click.prevent="downloadCV"
                             class="border-2  border-blue-400 bg-blue-500 px-8 md:px-10 py-3  rounded-xl relative group w-full sm:flex-1 flex justify-center whitespace-nowrap hover:bg-blue-400 transition-all duration-300">
-
+                        
                             <div class="flex items-center justify-center relative ">
                                 <ArrowDownTrayIcon
                                     class=" w-5 h-5 group-hover:translate-y-1 text-blue-900 transition-transform" />
@@ -40,7 +40,7 @@
                                     Download CV
                                 </span>
                             </div>
-
+                        
                         </a>
                     </div>
                     <div class="flex items-center justify-center lg:justify-start gap-4 lg:gap-8 pt-12"
@@ -61,7 +61,7 @@
                 </div>
                <div class="lg:h-full flex justify-center lg:justify-end" data-aos="fade-left" data-aos-delay="800">
                 <div class="relative w-full max-w-md lg:max-w-lg">
-                    <div class="relative z-10 bg-linear-to-r from-blue-300 to-cyan-500 shadow-2xl rounded-[50%_40%_50%_40%/60%_60%_40%_40%] p-4 backdrop-blur-sm border border-blue-500/30-transparent-y-6" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="relative z-10 bg-linear-to-r from-blue-300 to-cyan-500 shadow-2xl rounded-[50%_40%_50%_40%/60%_60%_40%_40%] p-4 backdrop-blur-sm border border-blue-500/30-transparent-y-6" data-aos="zoom-in" data-aos-delay="400">
                         <img src="../assets/card.jpg" alt="Hero Image"
                             class="w-full h-auto rounded-[50%_40%_50%_40%/60%_60%_40%_40%] object-cover" />
                     </div>
@@ -75,6 +75,13 @@
 </template>
 <script setup>
 import { ArrowRightIcon, ArrowDownTrayIcon } from '@heroicons/vue/16/solid';
+
+const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/docs/CV_DoeunSophors.pdf';
+    link.download = 'CV_DoeunSophors.pdf';
+    link.click();
+};
 
 
 

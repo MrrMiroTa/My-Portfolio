@@ -3,6 +3,9 @@
     <NavBar />
     <Hero />
     <Service/>
+    <Education/>
+    <Project/>
+    <About/>
   </div>
 </template>
 <script>
@@ -12,11 +15,17 @@ import Hero from './components/Hero.vue';
 import NavBar from './components/NavBar.vue';
 import { ref, nextTick, onMounted } from 'vue';
 import Service from './components/Service.vue';
+import Education from './components/Education.vue';
+import Project from './components/Project.vue';
+import About from './components/About.vue';
 export default {
   components: {
     NavBar,
     Hero,
-    Service
+    Service,
+    Education,
+    Project,
+    About
   },
   setup(){
     const loading = ref(true);
