@@ -2,10 +2,14 @@
   <div class="min-h-screen bg-linear-to-br from-gray-800 via-blue-900 to-bg-gray-800">
     <NavBar />
     <Hero />
-    <Service/>
-    <Education/>
-    <Project/>
-    <About/>
+    <Service />
+    <Education />
+    <!-- <Skill /> -->
+    <Project />
+    <About />
+    <Contact />
+    <Footer />
+
   </div>
 </template>
 <script>
@@ -18,6 +22,9 @@ import Service from './components/Service.vue';
 import Education from './components/Education.vue';
 import Project from './components/Project.vue';
 import About from './components/About.vue';
+import Footer from './components/Footer.vue';
+import Contact from './components/Contact.vue';
+import Skill from './components/Skill.vue';
 export default {
   components: {
     NavBar,
@@ -25,9 +32,12 @@ export default {
     Service,
     Education,
     Project,
-    About
+    About,
+    Contact,
+    Footer,
+    Skill
   },
-  setup(){
+  setup() {
     const loading = ref(true);
     onMounted(async () => {
       await nextTick();

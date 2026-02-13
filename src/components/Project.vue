@@ -16,7 +16,7 @@
                         <div class="relative p-8">
                             <h3 class="text-xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors duration-300">{{ project.title }}</h3>
                             <p class="text-blue-300 leading-relaxed mb-6">{{ project.description }}</p>
-                            <a href="{{ project.link }}" 
+                            <a :href="project.link" target="_blank" 
                                 class="inline-block border-2 border-blue-400 bg-blue-500 px-6 py-3 rounded-xl text-white font-medium hover:bg-blue-400 transition-all duration-300">
                                 View Project
                             </a>
@@ -34,38 +34,33 @@ const projects = ref([
     {
         id: 1,
         title: 'E-Commerce Platform',
-        description: 'A full-stack e-commerce platform built with Vue.js, Laravel, and MySQL, featuring user authentication, payment processing, and real-time inventory management.',
-        link: '#project1'
+        description: 'A full-stack e-commerce platform built with React.js, Laravel, and MySQL, featuring user authentication, payment processing, and real-time inventory management.',
+        link: 'https://e-commerceshop-three.vercel.app/'
     },
     {
         id: 2,
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features built with Vue.js and Firebase.',
-        link: '#project2'
+        title: 'Calculator App',
+        description: 'A simple yet elegant calculator application built with Vue.js and Tailwind CSS, featuring a clean UI and responsive design.',
+        link: 'https://calculator-app-uzita.vercel.app/'
     },
     {
         id: 3,
         title: 'Portfolio Website',
         description: 'A modern, responsive portfolio website showcasing web development projects with smooth animations and interactive elements using Vue.js and Tailwind CSS.',
-        link: '#project3'
+        link: 'https://portfolio-sophors.vercel.app/'
     },
     {
         id: 4,
-        title: 'Weather Dashboard',
-        description: 'A weather dashboard application with real-time weather data, interactive maps, and location-based forecasts using Vue.js and OpenWeather API.',
-        link: '#project4'
+        title: 'News Website',
+        description: 'A news website with real-time updates, categorized articles, and a responsive design using Vue.js and Tailwind CSS.',
+        link: 'https://news-by-uzita.vercel.app/'
     },
     {
         id: 5,
-        title: 'Blog Platform',
-        description: 'A content management system for blogging with user authentication, rich text editing, and social sharing features built with Vue.js and Strapi.',
-        link: '#project5'
+        title: 'To Do List App',
+        description: 'A simple yet elegant to-do list application built with Vue.js and Tailwind CSS, featuring task management and a clean UI.',
+        link: 'https://mrrmirota.github.io/To-Do-List/'
     },
-    {
-        id: 6,
-        title: 'Chat Application',
-        description: 'A real-time chat application with private messaging, group chats, and file sharing capabilities using Vue.js, Socket.io, and Node.js.',
-        link: '#project6'
-    }
+    
 ]);
 </script>

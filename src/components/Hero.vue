@@ -61,7 +61,7 @@
                 </div>
                <div class="lg:h-full flex justify-center lg:justify-end" data-aos="fade-left" data-aos-delay="800">
                 <div class="relative w-full max-w-md lg:max-w-lg">
-                    <div class="relative z-10 bg-linear-to-r from-blue-300 to-cyan-500 shadow-2xl rounded-[50%_40%_50%_40%/60%_60%_40%_40%] p-4 backdrop-blur-sm border border-blue-500/30-transparent-y-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="relative z-10 bg-linear-to-r from-blue-300 to-cyan-500 shadow-2xl rounded-[50%_40%_50%_40%/60%_60%_40%_40%] p-4 backdrop-blur-sm border border-blue-500/30-transparent-y-6" data-aos="zoom-in" data-aos-delay="200">
                         <img src="../assets/card.jpg" alt="Hero Image"
                             class="w-full h-auto rounded-[50%_40%_50%_40%/60%_60%_40%_40%] object-cover" />
                     </div>

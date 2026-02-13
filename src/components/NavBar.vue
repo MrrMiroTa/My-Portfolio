@@ -9,7 +9,7 @@ export default {
                 { name: 'Home', href: './' },
                 { name: 'About', href: '#about' },
                 { name: 'Skills', href: '#skills' },
-                { name: 'Testimonials', href: '#testimonials' },
+                { name: 'Educations', href: '#educations' },
                 { name: 'Projects', href: '#projects' },
                 { name: 'Contact', href: '#contact' },
             ],
@@ -31,7 +31,7 @@ export default {
 }
 </script>
 <template>
-    <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20">
+    <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20  ">
         <a href="./">
             <div class="text-3xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Sophors <span class="font-black">Portfolio</span>
