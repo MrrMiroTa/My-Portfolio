@@ -11,6 +11,7 @@ export default {
                 { name: 'Skills', href: '#skills' },
                 { name: 'Educations', href: '#educations' },
                 { name: 'Projects', href: '#projects' },
+                { name: 'Testimonials', href: '#testimonials' },
                 { name: 'Contact', href: '#contact' },
             ],
             isMenuOpen: false
@@ -33,7 +34,7 @@ export default {
 <template>
     <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20  ">
         <a href="./">
-            <div class="text-3xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <div class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Sophors <span class="font-black">Portfolio</span>
             </div>
         </a>
@@ -61,10 +62,10 @@ export default {
         </div>
         <nav
             :class="[`fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md:justify-between md:flex-row`, isMenuOpen ? 'flex' : 'hidden md:flex']">
-            <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0 md:flex">
+            <ul class="flex flex-col items-center space-y-6 py-8 md:flex-row md:space-x-5 md:space-y-0 md:flex md:py-0">
                 <li class="group relative" v-for="item in Menu" :key="item.name">
                     <a :href="item.href"
-                        class="relative text-blue-200  hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group"
+                        class="relative text-blue-200 hover:text-blue-400 transition-all duration-300 text-xl md:text-base font-medium group py-2 px-4"
                         @click.prevent="scrollToSection(item.href)">{{ item.name }}
 
                         <span
@@ -73,10 +74,11 @@ export default {
 
                 </li>
             </ul>
-            <div class="mt-8 md:mt-0 md:ml-8">
-                <button
-                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20  hover:scale-105">Get
-                    in Touch</button>
+            <div class="mt-10 md:mt-0 md:ml-8">
+                <a href="#contact"
+                    class="block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-medium text-center">
+                    Get in Touch
+                </a>
             </div>
         </nav>
     </header>

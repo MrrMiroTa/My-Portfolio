@@ -1,15 +1,16 @@
 <template>
-  <div class="min-h-screen bg-linear-to-br from-gray-800 via-blue-900 to-bg-gray-800">
+  <div class="min-h-screen bg-gradient-to-br from-gray-800 via-blue-900 to-gray-800">
+    <ScrollProgress />
     <NavBar />
     <Hero />
     <Service />
     <Education />
-    <!-- <Skill /> -->
+    <Skill />
     <Project />
+    <Testimonial />
     <About />
     <Contact />
     <Footer />
-
   </div>
 </template>
 <script>
@@ -25,6 +26,9 @@ import About from './components/About.vue';
 import Footer from './components/Footer.vue';
 import Contact from './components/Contact.vue';
 import Skill from './components/Skill.vue';
+import Testimonial from './components/Testimonial.vue';
+import ScrollProgress from './components/ScrollProgress.vue';
+
 export default {
   components: {
     NavBar,
@@ -35,7 +39,9 @@ export default {
     About,
     Contact,
     Footer,
-    Skill
+    Skill,
+    Testimonial,
+    ScrollProgress
   },
   setup() {
     const loading = ref(true);
@@ -55,4 +61,8 @@ export default {
   }
 }
 </script>
-<style></style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>

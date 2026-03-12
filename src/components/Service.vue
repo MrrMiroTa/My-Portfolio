@@ -1,9 +1,9 @@
 <template>
-    <div class="relative py-24 overflow-hidden bg-linear-to-r from-blue-900/50 to-cyan-900/50" id="services">
+    <div class="relative py-24 overflow-hidden bg-gradient-to-r from-blue-900/50 to-cyan-900/50" id="services">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl font-bold text-white mb-6 tracking-tight">
-                    <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-cyan-500">My
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">My
                         Services</span>
                 </h2>
                 <p class="mt-4 text-blue-300 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -15,9 +15,9 @@
                 <div v-for="(service, index) in services" :key="service.id" :data-aos="'fade-up'"
                     :data-aos-delay="index * 100">
                     <div
-                        class="group relative bg-gray-800 rounded-2xl border border-blue-500/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        class="group relative bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-blue-500/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">
                         <div
-                            class="absolute inset-0 bg-linear-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                         <div class="relative p-8">
                             <div

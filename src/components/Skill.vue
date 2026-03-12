@@ -1,9 +1,9 @@
 <template lang="html">
-    <div class="relative py-24 overflow-hidden bg-linear-to-r from-blue-900/50 to-cyan-900/50" id="skills">
+    <div class="relative py-24 overflow-hidden bg-gradient-to-r from-blue-900/50 to-cyan-900/50" id="skills">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl font-bold text-white mb-6 tracking-tight">
-                    <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-cyan-500">My Skills</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">My Skills</span>
                 </h2>
                 <p class="mt-4 text-blue-300 max-w-3xl mx-auto text-lg leading-relaxed">
                     A comprehensive overview of the technologies and tools I use to bring ideas to life.
@@ -17,11 +17,11 @@
                 </h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     <div v-for="skill in frontendSkills" :key="skill.name" 
-                         class="group bg-gray-800 rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
+                         class="group bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
                         <div class="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">{{ skill.icon }}</div>
                         <h4 class="text-white font-medium">{{ skill.name }}</h4>
-                        <div class="w-full bg-gray-700 rounded-full h-2 mt-3">
-                            <div class="bg-linear-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
+                        <div class="w-full bg-gray-700/50 rounded-full h-2 mt-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
                         </div>
                         <span class="text-xs text-gray-400 mt-1">{{ skill.level }}%</span>
                     </div>
@@ -35,11 +35,11 @@
                 </h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     <div v-for="skill in backendSkills" :key="skill.name" 
-                         class="group bg-gray-800 rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
+                         class="group bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
                         <div class="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">{{ skill.icon }}</div>
                         <h4 class="text-white font-medium">{{ skill.name }}</h4>
-                        <div class="w-full bg-gray-700 rounded-full h-2 mt-3">
-                            <div class="bg-linear-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
+                        <div class="w-full bg-gray-700/50 rounded-full h-2 mt-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
                         </div>
                         <span class="text-xs text-gray-400 mt-1">{{ skill.level }}%</span>
                     </div>
@@ -53,11 +53,11 @@
                 </h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <div v-for="skill in databaseSkills" :key="skill.name" 
-                         class="group bg-gray-800 rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
+                         class="group bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
                         <div class="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">{{ skill.icon }}</div>
                         <h4 class="text-white font-medium">{{ skill.name }}</h4>
-                        <div class="w-full bg-gray-700 rounded-full h-2 mt-3">
-                            <div class="bg-linear-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
+                        <div class="w-full bg-gray-700/50 rounded-full h-2 mt-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
                         </div>
                         <span class="text-xs text-gray-400 mt-1">{{ skill.level }}%</span>
                     </div>
@@ -71,11 +71,11 @@
                 </h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                     <div v-for="skill in toolSkills" :key="skill.name" 
-                         class="group bg-gray-800 rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
+                         class="group bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 text-center border border-blue-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1">
                         <div class="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">{{ skill.icon }}</div>
                         <h4 class="text-white font-medium">{{ skill.name }}</h4>
-                        <div class="w-full bg-gray-700 rounded-full h-2 mt-3">
-                            <div class="bg-linear-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
+                        <div class="w-full bg-gray-700/50 rounded-full h-2 mt-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-500" :style="{ width: skill.level + '%' }"></div>
                         </div>
                         <span class="text-xs text-gray-400 mt-1">{{ skill.level }}%</span>
                     </div>
